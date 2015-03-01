@@ -1,11 +1,11 @@
 canigma-react
 =============
 
-An implementation of [Canigma](https://github.com/chainsawriot/canigma) as described by chainsaw.
+An implementation of [Canigma](https://github.com/chainsawriot/canigma) as described by [@chainsawriot](https://twitter.com/chainsawriot).
 
 Demo Site.
 
-Status: Early prototype.
+Status: Prototype. ([Demo Site](https://canigma-react.herokuapp.com/))
 
 ## Todo
 
