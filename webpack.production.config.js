@@ -12,6 +12,11 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.DedupePlugin(),
+    new webpack.NoErrorsPlugin()
+  ],
   module: {
     loaders: [
       { 

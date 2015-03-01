@@ -7,10 +7,7 @@ var isProduction = (process.env.NODE_ENV == "production") ? true : false
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
   hot: !isProduction,
-  longTermCaching: isProduction,
-  separateStylesheet: isProduction,
-  minimize: isProduction,
-  historyApiFallback: isProduction
+  historyApiFallback: true
 }).listen(port, '0.0.0.0', function (err, result) {
   if (err) {
     console.log(err);
