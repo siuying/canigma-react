@@ -1,7 +1,6 @@
 var webpack = require('webpack');
 
 module.exports = {
-  devtool: 'eval',
   entry: [
     './scripts/index'
   ],
@@ -10,10 +9,6 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/scripts/'
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
-  ],
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
