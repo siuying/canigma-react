@@ -26,13 +26,13 @@
   "license": "MIT",
   "homepage": "https://github.com/siuying/canigma-react",
   "devDependencies": {
+    "jest-cli": "~0.4.0"
+  },
+  "dependencies": {
     "jsx-loader": "^0.12.2",
     "react-hot-loader": "^1.1.1",
     "webpack": "^1.5.1",
     "webpack-dev-server": "1.6.4",
-    "jest-cli": "~0.4.0"
-  },
-  "dependencies": {
     "react": "0.13.0-rc1",
     "react-tools": "0.13.0-rc1",
     "lodash": "",
