@@ -1,6 +1,6 @@
-var webpack = require('webpack');
-var WebpackDevServer = require('webpack-dev-server');
-var config = require('./webpack.config');
+var webpack = require('webpack')
+var WebpackDevServer = require('webpack-dev-server')
+var config = (process.env.NODE_ENV == "production") ?  require('./webpack.production.config') : require('./webpack.config')
 
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
