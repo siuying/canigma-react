@@ -1,0 +1,48 @@
+{
+  "name": "canigma-react",
+  "version": "1.0.0",
+  "description": "Boilerplate for ReactJS project with hot code reloading",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gaearon/react-hot-boilerplate.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "boilerplate",
+    "hot",
+    "hot",
+    "reload",
+    "hmr",
+    "live",
+    "edit",
+    "webpack"
+  ],
+  "author": "Francis Chong <francis@ignition.hk> (http://github.com/siuying)",
+  "license": "MIT",
+  "homepage": "https://github.com/siuying/canigma-react",
+  "devDependencies": {
+    "jsx-loader": "^0.12.2",
+    "jsxc": "~0.1.6",
+    "react-hot-loader": "^1.1.1",
+    "webpack": "^1.5.1",
+    "webpack-dev-server": "1.6.4",
+    "jest-cli": "~0.4.0",
+    "babel": "~4.6.1"
+  },
+  "dependencies": {
+    "react": "0.13.0-rc1",
+    "react-tools": "0.13.0-rc1",
+    "lodash": "",
+    "flux": ""
+  },
+  "jest": {
+     "scriptPreprocessor": "../preprocessor.js",
+     "unmockedModulePathPatterns": ["./node_modules/react", "./node_modules/lodash"],
+     "rootDir": "./scripts"
+  }
+}
