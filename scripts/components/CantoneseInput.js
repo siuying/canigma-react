@@ -9,7 +9,7 @@ class CantoneseInput extends React.Component {
     }
 
     onChange(e) {
-        updateInput(e.target.value)
+        updateInput(e.currentTarget.value)
     }
 }
 

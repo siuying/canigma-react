@@ -12,7 +12,7 @@ var _output = ""
 var _seed = Math.random()
 
 function getRandomInt(min, max) {
-  return Math.floor(_seed * (max - min)) + min;
+  return Math.floor(Math.random() * (max - min)) + min;
 }
 
 function findRandomCharacters(characters, seed) {
@@ -25,9 +25,9 @@ function update(input) {
     _characters = Canigma.obfuscateString(input)
     _output = _.map(_characters, c => {
         if (c.sameSoundCharactersWithSingleSound.length > 0) {
-            return c.sameSoundCharactersWithSingleSound[0]
+            return findRandomCharacters(c.sameSoundCharactersWithSingleSound)
         } else if (c.sameSoundCharacters.length > 0) {
-            return c.sameSoundCharacters[0]
+            return findRandomCharacters(c.sameSoundCharacters)
         } else {
             return c
         }
